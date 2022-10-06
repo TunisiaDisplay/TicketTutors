@@ -1,0 +1,251 @@
+<html>
+
+<head>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Plus+Jakarta+Sans&display=swap');
+
+        body {
+            display: flex;
+            /*background-color: brown;*/
+            /*background-color: #F6F6F6;*/
+            background-image: url("./img/bg.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            justify-content: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            
+            height: 100%;
+            row-gap: 60px;
+            padding: 40px;
+        }
+
+
+
+        .white {
+            background-color: white;
+            border-radius: 20px;
+        }
+
+        .header {
+            display: flex;
+            border-radius: 12px;
+            justify-content: space-between;
+
+            padding: 20px 32px;
+        }
+
+        .main {
+            display: flex;
+            gap: 60px;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            border-radius: 20px;
+
+            padding: 20px;
+
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+
+            color: #1A1A1A;
+        }
+
+        .part-1 {
+            background-color: white;
+            flex-grow: 1;
+
+            text-align: center;
+            padding: 20px;
+        }
+
+        .progress{
+            margin-top: 43px;
+            /*background-color: red;*/
+            height: 81px;
+        }
+
+        .part-2 {
+            /*background-color: cornflowerblue;*/
+
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+
+            padding: 20px;
+            
+        }
+
+        h2 {
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 44px;
+            /* identical to box height */
+
+            letter-spacing: 0.01em;
+
+            color: #2B2D42;
+            margin-top: 0;
+        }
+
+        .h-icons {
+            padding-right: 20px;
+        }
+
+        input,select {
+            border-radius: 6px;
+            margin-top: 12px;
+            margin-bottom: 20px;
+
+            padding: 16px;
+            height: 50px;
+
+            /*flex-basis: 40%;*/
+            display: block;
+
+            width: 100%;
+            /*
+            flex-grow: 1;
+            flex-shrink: 0;
+            */
+        }
+
+        .part-3 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+        }
+
+        #next-b{
+            background-color: #0C8BFD;
+            border-radius: 8px;
+            padding: 16px 10px;
+
+            margin-top: 36px;
+        }
+
+
+
+
+        @media only screen and (min-width: 992px) {
+            
+            .container {
+                max-width: 1200px;
+                padding-top: 40px;
+            }
+    
+    
+            .white {
+                background-color: white;
+            }
+    
+           
+            .main {
+                
+                background-color: white;
+            }
+    
+            .part-1 {
+                background-color: white;
+                max-width: 520px;
+                padding: 0;
+            }
+    
+           
+            .part-2 {
+                /*background-color: cornflowerblue;*/
+    
+                display: flex;
+                flex-direction: column;
+                /*flex-grow: 1;*/
+                min-width: 360px;
+                max-width: 540px;
+                padding: 0;
+            }
+    
+            
+    
+            input,select {
+                min-width: 213px;
+            }
+    
+            .part-3 {
+                flex-direction: row;
+            }
+    
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class=" header white">
+            <img src="./img/Logo.png">
+            <div>
+                <img class="h-icons" src="./img/sms.png">
+                <img class="h-icons" src="./img/notification-bing.png">
+            </div>
+        </div>
+        <div class=" main">
+            <div class="part-1 white">
+                <img src="./img/img1.svg">
+                <div class="progress">
+                    <img src="./img/progress.png" alt="">
+                </div>
+            </div>
+            <div class="part-2 white">
+                <h2>Payment info</h2>
+                Cardholder name
+                <input type="text">
+                Card number
+                <input type="text">
+                <div class="part-3">
+                    <div>
+                        Expiry date
+                        <input type="text">
+                    </div>
+
+                    <div>
+                        Security code
+                        <input type="text">
+                    </div>
+
+                    <div>
+                        Postal code
+                        <input type="text">
+                    </div>
+                    <div>
+                        Country
+                        <select name="c" id="c">
+                            <option>Select country</option>
+                            <option>Tunisia</option>
+                            <option>US</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button id="next-b">Next</button>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
