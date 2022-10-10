@@ -5,7 +5,7 @@ import TextField from '@mui/material/TextField';
 
 
 
-import img2 from '../../public/img/img2.svg'
+import img2 from '../../public/img/img2.png'
 import progress2 from '../../public/img/progress2.png'
 
 export default function Find() {
