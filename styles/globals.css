@@ -131,6 +131,10 @@ span{
   margin-top: 36px;
 }
 
+.space_between{
+  justify-content: space-between;
+  row-gap: 20px;
+}
 
 
 
