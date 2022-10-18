@@ -1,5 +1,15 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+> ## Figma Link
+> This is a converted Figma design to nextjs .
+> click [**here**](https://www.figma.com/file/MW67HeuQXzfJ6hVWUCll3w/UpWork-Job-Posting-(Copy)) to see the design file
+>
+> ## Using Docker
+> Build your container: docker build -t nextjs-docker .
+> 
+> Run your container: docker run -p 3000:3000 nextjs-docker
+> 
+
 ## Getting Started
 
 First, run the development server:
